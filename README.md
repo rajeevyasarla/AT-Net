@@ -21,3 +21,8 @@ Atmospheric turbulence can significantly degrade the quality of images acquired 
 2. Python 2 or 3
 3. Pytorch version >=1.0
 4. CPU or NVIDIA GPU + CUDA CuDNN (CUDA 8.0)
+
+
+'''
+python train.py --learning_rate 2e-4 --crop_size [256,256] --train_batch_size 2 --epoch_start 0 --lambda_loss 2e-3 --exp_name ./results --lambda_GP 0.0015
+'''
