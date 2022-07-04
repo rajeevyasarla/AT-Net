@@ -131,31 +131,8 @@ loss_network.eval()
 if os.path.exists('./{}'.format(exp_name))==False:
     os.mkdir('./{}'.format(exp_name)) 
 
-val_data_dir = '/media/labuser/cb8bb1ad-451a-4aa4-870c-2d3eeafe2525/Tubfaces89/300M/tubimages/'
+val_data_dir = '/media/labuser/sdd/ICIP_Turbulence_files/cropped_256/'
 val_data_loader = DataLoader(ValData(val_data_dir), batch_size=val_batch_size, shuffle=False, num_workers=8)
-
-## area to comment starts
-try:
-    net.load_state_dict(torch.load('./results/distort_epoch32'))
-    net_var.load_state_dict(torch.load('./results/distort_var_epoch32'))
-
-    print('--- weight loaded ---')
-except:
-    print('--- no weight loaded ---')
-
-old_val_psnr, old_val_ssim = validation(net, net_var, val_data_loader, device, '300')
-
-val_data_dir = '/media/labuser/cb8bb1ad-451a-4aa4-870c-2d3eeafe2525/Tubfaces89/650M/tubimages/'
-val_data_loader = DataLoader(ValData(val_data_dir), batch_size=val_batch_size, shuffle=False, num_workers=8)
-
-old_val_psnr, old_val_ssim = validation(net, net_var, val_data_loader, device, '650')
-
-val_data_dir = '/media/labuser/cb8bb1ad-451a-4aa4-870c-2d3eeafe2525/Tubfaces89/1000M/tubimages/'
-val_data_loader = DataLoader(ValData(val_data_dir), batch_size=val_batch_size, shuffle=False, num_workers=8)
-
-old_val_psnr, old_val_ssim = validation(net, net_var, val_data_loader, device, '1000')
-
-stop
 
 ### area comment ends
 # --- Calculate all trainable parameters in network --- #
