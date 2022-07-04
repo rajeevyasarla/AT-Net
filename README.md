@@ -31,7 +31,7 @@ Clean face images from Helen and CelebA are aligned and used as input to train A
 python train.py --learning_rate 2e-4 --crop_size [256,256] --train_batch_size 2 --epoch_start 0 --lambda_loss 2e-3 --exp_name ./results --lambda_GP 0.0015
 ```
 
-## To train AT-Net
+## To test AT-Net
 ```
 python test.py --val_dir ="path_test_images" --checkpoint="path_to_models" --exp_name "./results"
 ```
