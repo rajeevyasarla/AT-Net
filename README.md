@@ -2,7 +2,7 @@
 Learning to Restore Images Degraded by Atmospheric Turbulence Using Uncertainty, recognized as **Best paper** at IEEE International Conference on Image Processing, 2021
 
 
-[Rajeev Yasarla*](https://sites.google.com/view/rajeevyasarla/home),  [Vishal M. Patel](https://engineering.jhu.edu/ece/faculty/vishal-m-patel/)
+[Rajeev Yasarla](https://sites.google.com/view/rajeevyasarla/home),  [Vishal M. Patel](https://engineering.jhu.edu/ece/faculty/vishal-m-patel/)
 
      @InProceedings{9506614,
      author={Yasarla, Rajeev and Patel, Vishal M.},
