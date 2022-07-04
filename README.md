@@ -1,5 +1,5 @@
 # AT-Net
-Learning to Restore Images Degraded by Atmospheric Turbulence Using Uncertainty, recognized as **Best paper** at IEEE International Conference on Image Processing, 2021
+Learning to Restore Images Degraded by Atmospheric Turbulence Using Uncertainty, recognized as ***Best paper*** at IEEE International Conference on Image Processing, 2021
 
 
 [Rajeev Yasarla](https://sites.google.com/view/rajeevyasarla/home),  [Vishal M. Patel](https://engineering.jhu.edu/ece/faculty/vishal-m-patel/)
@@ -35,3 +35,4 @@ python train.py --learning_rate 2e-4 --crop_size [256,256] --train_batch_size 2 
 ```
 python test.py --val_dir ="path_test_images" --checkpoint="path_to_models" --exp_name "./results"
 ```
+pretrained models can downloaded fromm this link [Dropbox](https://www.dropbox.com/s/7k32so1s0pgykil/drive-download-20220704T212509Z-001.zip?dl=0)
