@@ -4,7 +4,7 @@ Learning to Restore Images Degraded by Atmospheric Turbulence Using Uncertainty,
 
 [Rajeev Yasarla*](https://sites.google.com/view/rajeevyasarla/home),  [Vishal M. Patel](https://engineering.jhu.edu/ece/faculty/vishal-m-patel/)
 
-  @INPROCEEDINGS{9506614,
+  @InProceedings{9506614,
   author={Yasarla, Rajeev and Patel, Vishal M.},
   booktitle={2021 IEEE International Conference on Image Processing (ICIP)}, 
   title={Learning to Restore Images Degraded by Atmospheric Turbulence Using Uncertainty}, 
