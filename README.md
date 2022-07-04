@@ -21,6 +21,9 @@ Atmospheric turbulence can significantly degrade the quality of images acquired 
 2. Python 2 or 3
 3. Pytorch version >=1.0
 4. CPU or NVIDIA GPU + CUDA CuDNN (CUDA 8.0)
+```
+pip install requirements.txt
+```
 
 ## To train AT-Net
 ```
