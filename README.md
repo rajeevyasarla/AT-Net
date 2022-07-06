@@ -26,7 +26,14 @@ pip install requirements.txt
 ```
 
 ## To train AT-Net
-Clean face images from Helen and CelebA are aligned and used as input to train AT-Net
+1. Clean face images from Helen and CelebA are aligned and used as input to train AT-Net.
+2. Specify train directory and validation directory in train.py lines (57-58)
+```
+    train_data_dir = '/media/labuser/cb8bb1ad-451a-4aa4-870c-2d3eeafe2525/FFHD_data/images512x512/'
+    val_data_dir = '/media/labuser/cb8bb1ad-451a-4aa4-870c-2d3eeafe2525/Tubfaces89/300M/tubimages/'
+```
+Note for training you should mention clean images path, train_data.py will generate pairs of turbulence degraded images (refer lines 78-96 in train_data.py ). turbulence degradation parameters can be modified in config_tdrn.py
+3. Run the following command to train At-Net
 ```
 python train.py --learning_rate 2e-4 --crop_size [256,256] --train_batch_size 2 --epoch_start 0 --lambda_loss 2e-3 --exp_name ./results --lambda_GP 0.0015
 ```
